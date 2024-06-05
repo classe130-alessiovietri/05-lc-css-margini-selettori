@@ -1,0 +1,139 @@
+/* 
+    RESET
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    /* ALESSIO FA COSI MA NON VA FATTO SEMPRE */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+    GENERAL
+*/
+section {
+    padding: 50px;
+    margin-bottom: 100px;
+    border: 5px dashed aqua;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+}
+
+.box.red {
+    border: 5px dashed red;
+}
+
+.box.blue {
+    border: 5px dashed blue;
+}
+
+.box.yellow {
+    border: 5px dashed yellow;
+}
+
+hr {
+    margin: 80px 0;
+}
+
+/* 
+    SECTION 1
+*/
+#section-1 .box-1 {
+    margin-bottom: 50px;
+}
+
+#section-1 .box-2 {
+    margin-top: 30px;
+}
+
+/* 
+    SECTION 2
+*/
+/* a {
+    color: lightcoral;
+} */
+
+/* a[href] {
+    color: purple;
+} */
+
+a[href="services.html"] {
+    color: greenyellow;
+}
+
+#section-2 a.special-link:hover {
+    font-weight: bold;
+    color: red;
+    font-size: 2rem;
+}
+
+#section-2 div input:focus {
+    border: 20px dashed lightcoral;
+    font-size: 40px;
+}
+
+/* 
+    Lo spazio mi va a selezionare tutti i figli
+    a QUALUNQUE LIVELLO DI DISCENDENZA
+*/
+ul li:first-child {
+    background-color: blueviolet;
+}
+
+/* 
+    Il carattere > mi va a selezionare tutti
+    i figli DIRETTI
+*/
+ul > li:first-child {
+    background-color: orangered;
+}
+
+/* 
+    Così viene colorato il primo figlio diretto
+    QUALSIASI ESSO SIA
+*/
+ul > :first-child {
+    background-color: deeppink;
+}
+
+ul > :last-child {
+    color: gold;
+}
+
+ul > :nth-child(2) {
+    font-size: 30px;
+}
+
+/* 
+    Così prendi tutti i figli diretti ul
+    IN POSIZIONE PARI
+*/
+/* ul > :nth-child(2n) { */
+ul > :nth-child(even) {
+    border: 3px dotted green;
+}
+
+/* 
+    Così prendi tutti i figli diretti ul
+    IN POSIZIONE DISPARI
+*/
+/* ul > :nth-child(2n+1) { */
+ul > :nth-child(odd) {
+    border: 6px groove blue;
+}
+
+ul > li:first-of-type {
+    padding: 60px;
+}
+
+
+
+[class*="ox"]:not(.blue) {
+    background-color: lawngreen;
+}
